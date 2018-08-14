@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta id="main-viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow, archive">
+    <meta name="googlebot" content="index, follow, archive">
+    <meta name="yandex" content="index, follow, archive">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <!--[if IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script><![endif]-->
+    <title>Almazvolga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.1/dist/jquery.formstyler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancyapps-fancybox@2.1.9/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="full-site">
+        <div class="full-content">
+            <header class="page-header">
+                <div class="container">
+                    <div class="row page-header-1">
+                        <div class="page-header__logo col-md-2 col-xs-3">
+                            <a href="/"><img class="page-header__logo-img hidden-sm hidden-xs" src="i/logo.png" alt=""></a>
+                            <a href="/"><img class="page-header__logo-img hidden-md hidden-lg" src="i/logomh.png" alt=""></a>
+                        </div>
+                        <div class="page-header-call hidden-md hidden-lg col-xs-7">
+                            <a href="" class="btn btn-primary red-button"><span class="icon-catalog"></span>Каталог</a>
+                        </div>
+                        <div class="page-header-navsmall hidden-md hidden-lg col-xs-2">
+                            <a href="" class="page-header-navsmall__menu" id="open-menu"><span class="icons-menu"></span></a>
+                        </div>
+                        <div class="page-header__search col-md-5">
+                            <form id="search-highlight" method="post" action="#">
+                                <input class="input-full input-transparent" type="text" name="term" id="term" placeholder="Поиск по каталогу">
+                                <a class="page-header__search-link" type="submit" name="submit" id="submit" href=""></a>
+                            </form>
+                            <p class="results"></p>
+                        </div>
+                        <div class="page-header__sravn col-md-3 hidden-sm hidden-xs">
+                            <a href="" class="page-header-link"><span class="icon-sravnenie"></span><i>10</i>Сравнение</a>
+                        </div>
+                        <div class="page-header-call col-md-2 hidden-sm hidden-xs">
+                            <a href="" class="btn btn-primary red-button"><span class="icon-catalog"></span>Каталог</a>
+                        </div>
+                    </div>
+                    <div class="row page-header-2 hidden-sm hidden-xs">
+                        <div class="col-md-7">
+                            <nav class="page-header__nav">
+                                <li>
+                                    <a href="" class="selected">Услуги</a>
+                                    <ul class="page-header__nav-submenu container">
+                                        <div class="page-header__nav-submenu-flex">
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s1"></span><a href="">Строительное<br> оборудование</a></p>
+                                                <p class="page-header__nav-p"><a href="">Сверлильное оборудование</a></p>
+                                                <p class="page-header__nav-p"><a href="">Оборудование для алмазной резки</a></p>
+                                                <p class="page-header__nav-p"><a href="">Мозаично-шлифовальные машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Затирочные и заглаживающие машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Глубинные и внешние вибраторы</a></p>
+                                                <p class="page-header__nav-p"><a href="">Вибротрамбовки и виброплиты</a></p>
+                                                <p class="page-header__nav-p"><a href="">Отбойные молотки</a></p>
+                                                <p class="page-header__nav-p"><a href="">Системы освещения</a></p>
+                                                <p class="page-header__nav-p"><a href="">Обогреватели</a></p>
+                                            </div>
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s2"></span><a href="">Дерево-<br> обработка</a></p>
+                                                <p class="page-header__nav-p"><a href="">Пильные диски</a></p>
+                                                <p class="page-header__nav-p"><a href="">Шлифование дерева</a></p>
+                                            </div>
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s3"></span><a href="">Сантехнический<br> инструмент</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="page-header__nav-submenu-flex">
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s4"></span><a href="">Металло<br>обработка</a></p>
+                                                <p class="page-header__nav-p"><a href="">Сверлильное оборудование</a></p>
+                                                <p class="page-header__nav-p"><a href="">Оборудование для алмазной резки</a></p>
+                                                <p class="page-header__nav-p"><a href="">Мозаично-шлифовальные машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Затирочные и заглаживающие машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Глубинные и внешние вибраторы</a></p>
+                                                <p class="page-header__nav-p"><a href="">Вибротрамбовки и виброплиты</a></p>
+                                                <p class="page-header__nav-p"><a href="">Отбойные молотки</a></p>
+                                            </div>
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s5"></span><a href="">Буры<br> и пики</a></p>
+                                                <p class="page-header__nav-p"><a href="">Пильные диски</a></p>
+                                                <p class="page-header__nav-p"><a href="">Шлифование дерева</a></p>
+                                                <p class="page-header__nav-p"><a href="">Пильные диски</a></p>
+                                            </div>
+                                            <div class="page-header__nav-submenu-flex--1">
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s6"></span><a href="">Садовая техника<br> и инструмент</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="page-header__nav-submenu-flex">
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s7"></span><a href="">Алмазный<br> инструмент</a></p>
+                                                <p class="page-header__nav-p"><a href="">Сверлильное оборудование</a></p>
+                                                <p class="page-header__nav-p"><a href="">Оборудование для алмазной резки</a></p>
+                                                <p class="page-header__nav-p"><a href="">Мозаично-шлифовальные машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Затирочные и заглаживающие машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Глубинные и внешние вибраторы</a></p>
+                                                <p class="page-header__nav-p"><a href="">Вибротрамбовки и виброплиты</a></p>
+                                            </div>
+                                            <div class="page-header__nav-submenu-flex--2">
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s8"></span><a href="">Камнерезные<br> станки и плиткорезы</a></p>
+                                                <p class="page-header__nav-p"><a href="">Пильные диски</a></p>
+                                                <p class="page-header__nav-p"><a href="">Шлифование дерева</a></p>
+                                                <p class="page-header__nav-p"><a href="">Пильные диски</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="page-header__nav-submenu-flex">
+                                            <div class="page-header__nav-submenu-flex--2">
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s9"></span><a href="">Дорожная<br> техника</a></p>
+                                                <p class="page-header__nav-p"><a href="">Сверлильное оборудование</a></p>
+                                                <p class="page-header__nav-p"><a href="">Оборудование для алмазной резки</a></p>
+                                                <p class="page-header__nav-p"><a href="">Мозаично-шлифовальные машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Затирочные и заглаживающие машины</a></p>
+                                                <p class="page-header__nav-p"><a href="">Глубинные и внешние вибраторы</a></p>
+                                                <p class="page-header__nav-p"><a href="">Вибротрамбовки и виброплиты</a></p>
+                                            </div>
+                                            <div>
+                                                <p class="page-header__nav-submenu-title"><span class="icons-s10"></span><a href="">Крепежные системы <br>и хим. анкера</a></p>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="">О компании</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Публикации</a></li>
+                            </nav>
+                        </div>
+                        <div class="page-header__sravn col-md-3">
+                            <a href="" class="page-header-link"><span class="icon-dostavka"></span>Доставка по всей России</a>
+                        </div>
+                        <div class="page-header-phone col-md-2">
+                            <a href="tel:8 800 123 45 67"><span class="icon-callme"></span>8 800 123 45 67</a>
+                        </div>
+                    </div>
+                    <div class="row header-mobile-menu hidden-md hidden-lg">
+                        <div class="header-mobile-menu-content">
+                            <div class="page-header__logo col-md-2 col-xs-3">
+                                <img class="page-header__logo-img hidden-md hidden-lg" src="i/logomh.png" alt="">
+                            </div>
+                            <div class="page-header-call hidden-md hidden-lg col-xs-7">
+                                <a href="" class="btn btn-primary red-button"><span class="icon-catalog"></span>Каталог</a>
+                            </div>
+                            <div class="page-header-navsmall hidden-md hidden-lg col-xs-2">
+                                <a href="" class="page-header-navsmall__menu" id="close-menu"><span class="icons-cross"></span></a>
+                            </div>
+                            <div class="page-header__search col-xs-12">
+                                <form id="search-highlight" method="post" action="#">
+                                    <input class="input-full input-transparent" type="text" name="term" id="term" placeholder="Поиск по каталогу">
+                                    <a class="page-header__search-link" type="submit" name="submit" id="submit" href=""></a>
+                                </form>
+                            </div>
+                            <nav class="page-header-nav-mobilen col-xs-12">
+                                <a href="">Услуги</a>
+                                <a href="">О компании</a>
+                                <a href="">Контакты</a>
+                                <a href="">Публикации</a>
+                            </nav>
+                            <div class="page-header-phone col-xs-12">
+                                <a href="tel:8 800 123 45 67"><span class="icon-callme"></span>8 800 123 45 67</a>
+                            </div>
+                            <div class="page-header__sravn col-xs-12">
+                            <a href="" class="page-header-link"><span class="icon-dostavka"></span>Доставка по всей России</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="page-breadcrumbs">
+                <div class="container">
+                    <span class="page-breadcrumbs-span">
+                        <a href="/" class="page-breadcrumbs-a">Главная</a>
+                    </span>
+                    <span class="page-breadcrumbs-span">Новости и публикация</span>
+                </div>
+            </section>
+            <section class="inner-content full--articles">
+               <div class="container">
+                   <h1 class="page-title">Как правильно выбрать алмазную коронку?</h1>
+                   <p class="full--articles-first">Все мы когда-либо встречались или встретимся с ремонтом в квартире/доме, и одной из целей будет прокладка новой проводки.</p>
+                   <h2>Что же представляет собой коронка по бетону?</h2>
+                   <p>Некий отрезок трубы, обычно от 25мм до 80мм, наиболее распространяемая 40мм и 45мм. К краям этой же трубы симметрично припаяны победитовые/алмазные/вольфрамовые сегменты, которые же и выступают в роли резцов. Набор также может содержать центральное сверло, которое фиксируется в крепежном узле.</p>
+                   <p>Желательно иногда менять центральное сверло, так как оно обладает свойством тупиться. Чтобы как можно эффективней использовать коронку, нужна, дрель или же перфоратор достаточно высокой мощности оборотов.</p>                   
+                   <p><img src="i/article/article1.jpg" alt=""></p>
+                   <h2>Виды коронок</h2>
+                   <p>Сегодня существует два самых основных типов коронок по бетону, это победитовые и алмазная коронка для подрозетников. В чем же отличие, спросите вы нас? В цене, качестве и времени эксплуатации.</p>
+                   <h3>Победитовые</h3>
+                   <p>Металлические коронки с победитовым наконечником более дешевые и подходят для бытовых нужд.</p>
+                   <h3>Алмазные</h3>
+                   <p>Они имеют алмазное напыление, подойдут для профессионалов, знатоков своего дела, но и цена собственно будет выше. На сегменты коронки нанесены технические алмазы, с помощью которых вы сможете проделывать дыры в бетонных и кирпичных стенах быстро и эффективно. Поэтому специалисты в данном деле предпочитают именно алмазные коронки, так как они более долговечные и эффективные.</p>
+                   <p>Также если на вашем пути попадётся арматура, вы перережете и её, но все же крайне не рекомендуется резать металлические объекты, потому что это приведет к быстрой поломки. Так же некие коронки имеют пониженный уровень шума, но за такое удовольствие тоже надо доплатить.</p>
+                   <p>В те времена, когда не знали об алмазных коронках, отверстия для подрозетников проделывались подсобными материалами. На сегодняшний день все проще. Сделать отверстие проще простого с помощью алмазных коронок.</p>
+                   <p>В отличие от устаревших коронок с победитовыми напайками (им нужен перфоратор большой мощности), алмазные можно использовать и с обычной дрелью. Также робота с такими коронками получается качественной, эффективной и быстрой</p>
+                   <p><img src="i/article/article2.jpg" alt=""></p>
+                   <h2>Размер коронок для подрозетников</h2>
+                   <p>Для начала нужно иметь хотя бы ударную дрель, хотя перфоратор подойдет лучше. Использовать обычную дрель можно, но вы потратите полдня, что бы высверлить отверстие нужного диаметра и глубины. С выбором инструмента мы определились, далее надо правильно собрать ее. Сначала надо воткнуть сверло, потом закрепить чашу по резьбе. Все должно плотно соприкасаться, что бы ничего не «болталось». После сборки, нужно начертить место, где вы будете сверлить (метки для главного сверла).</p>
+                   <p>Жизненно важно быть в очках и по возможности надеть респиратор, так как пыли будет очень много. Так же нужно выбрать правильную розетку, если вы сверлите для ванной нужны водонепроницаемые розетки, для всех остальных комнат подойдут обычные.</p>
+                   <h3>Небольшие, но полезные советы</h3>
+                   <p>Не покупайте дешевые китайские яко-бы алмазные коронки. Уже после нескольких часов роботы они тупятся или просто отпадают напайки.
+                   <p>Но поломка алмазной коронки не повод её выбрасывать, существуют специальные восстановительные и ремонтные службы. Для начала они определяют степень изношенности, проводят детальный осмотр алмазных сегментов. И потом уже напаяют новые алмазные элементы. Что бы инструмент прослужил вам дольше, нужно всегда соблюдать правила использования.</p>
+                   <h2>Как выбрать алмазную коронку видео-обзор</h2>
+                   <p>
+                       <iframe width="100%" height="640" src="https://www.youtube.com/embed/J1Wb_0fWmXw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   </p>
+                   <div class="full-articles-social">
+                       <h3>Понравился материал? Поделитесь им с друзьями!</h3>
+                       <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir" data-counter=""></div>
+                   </div>
+                   <div class="full-articles-other-articles">
+                       <p class="page-title">Советуем почитать:</p>
+                        <div class="full-articles-items">
+                            <div class="row article--other">
+                                <a class="full-articles-item col-md-3" href="#" style="background: url(../i/home/article.jpg); background-size: cover;">
+                                    <p class="full-articles-item-img">
+                                        <img src="i/home/article.jpg" alt="">
+                                    </p>
+                                    <p class="full-articles-item-title">Как правильно выбрать алмазную коронку?</p>
+                                    <p class="full-articles-item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                                </a>
+                                <a class="full-articles-item col-md-3" href="#" style="background: url(../i/home/article.jpg); background-size: cover;">
+                                    <p class="full-articles-item-img">
+                                        <img src="i/home/article.jpg" alt="">
+                                    </p>
+                                    <p class="full-articles-item-title">Как правильно выбрать алмазную коронку?</p>
+                                    <p class="full-articles-item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                                </a>
+                                <a class="full-articles-item col-md-3" href="#" style="background: url(../i/home/article.jpg); background-size: cover;">
+                                    <p class="full-articles-item-img">
+                                        <img src="i/home/article.jpg" alt="">
+                                    </p>
+                                    <p class="full-articles-item-title">Как правильно выбрать алмазную коронку?</p>
+                                    <p class="full-articles-item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                                </a>
+                                <a class="full-articles-item col-md-3" href="#" style="background: url(../i/home/article.jpg); background-size: cover;">
+                                    <p class="full-articles-item-img">
+                                        <img src="i/home/article.jpg" alt="">
+                                    </p>
+                                    <p class="full-articles-item-title">Как правильно выбрать алмазную коронку?</p>
+                                    <p class="full-articles-item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+               </div>                
+            </section>
+        </div>
+        <footer class="page-footer wow fadeIn">
+            <div class="container">
+                <div class="page-footer-left">
+                    <h2 class="section-title">Есть вопросы?</h2>
+                    <p class="page-footer-left-p">Lorem Ipsum - это текст-"рыба", часто <br>используемый в печати и вэб-дизайне. </p>
+                    <form action="" class="footer-form">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" class="phone-field" placeholder="Номер телефона">
+                        <div class="page-footer-left-flex">
+                            <input type="submit" class="btn btn-primary red-button" value="Получить ответы">
+                            <span class="page-footer-left-span">нажимая на кнопку, я подтверждаю свое согласие <a href="">с политикой конфиденциальности</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="page-footer-right">
+                    <div class="page-footer-block">
+                        <p class="page-footer-block-title">Каталог товаров</p>
+                        <nav class="page-footer-menu">
+                            <a href="">Алмазный инструмент</a>
+                            <a href="">Строительное оборудование</a>
+                            <a href="">Камнерезные станки и плиткорезы</a>
+                            <a href="">Дорожная техника</a>
+                            <a href="">Алмазный инструмент</a>
+                            <a href="">Строительное оборудование</a>
+                            <a href="">Камнерезные станки и плиткорезы</a>
+                            <a href="">Дорожная техника</a>
+                        </nav>
+                        <div class="page-footer-copy hidden-sm hidden-xs">
+                            <p>© 2018 Все права защищены</p>
+                        </div>
+                    </div>
+                    <div class="page-footer-block">
+                        <p class="page-footer-block-title">Наши услуги</p>
+                        <nav class="page-footer-menu">
+                            <a href="">Алмазный инструмент</a>
+                            <a href="">Строительное оборудование</a>
+                            <a href="">Камнерезные станки и плиткорезы</a>
+                        </nav>
+                        <div class="page-footer-contacts">
+                            <a href="" class="page-footer-logo hidden-md hidden-lg">
+                                <img src="http://almazvolga.space/i/logo-white.png" alt="">
+                            </a>
+                            <span class="page-footer-contacts-span"><a href="mailto:msb@almazvolga.ru">msb@almazvolga.ru</a></span>
+                            <span class="page-footer-contacts-span">Волгоград, ул. Пархоменко, 47Б</span>
+                            <span class="page-footer-contacts-span"><a href="tel:8 (8442) 602-202">8 (8442) 602-202</a></span>
+                        </div>
+                        <div class="page-footer-copy hidden-md hidden-lg">
+                            <p>© 2018 Все права защищены</p>
+                        </div>
+                        <div class="page-footer-dev">
+                            <p>Разработано в <a href="">TODO</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.12.1/ui/widget.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.12.1/ui/widgets/datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.12.1/ui/i18n/datepicker-ru.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fancyapps-fancybox@2.1.9/source/jquery.fancybox.pack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/jquery.matchHeight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/svgxuse@1.2.6/svgxuse.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.1/dist/jquery.formstyler.min.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
