@@ -1437,6 +1437,25 @@ span.compare-options-table-znach {
     padding: 0;
 }
 
+.full-articles-item {
+    color: #282d3a!important;
+}
+
+.full-articles-item:hover {
+    color: #282d3a!important;
+    text-decoration: underline!important;
+}
+
+
+.article--list .full-articles-item:first-child, .article--list .full-articles-item:first-child {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+.article--list .full-articles-item:first-child:hover {
+    color: #fff!important;
+    text-decoration: underline!important;
+}
 
 .full-articles-item-img {
     margin-bottom: 20px;
@@ -2435,6 +2454,10 @@ span.home-promo-service-title br {
         line-height: 25px;
         font-family: 'FuturaDemiC';
         margin: 24px 0 12px;
+    }
+    
+    .full-articles-item, .full-articles-item:hover {
+        color: #fff!important;
     }
 }
 
