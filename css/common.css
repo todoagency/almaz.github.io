@@ -1078,15 +1078,28 @@ footer.page-footer > div {
 
 .page-footer-left {
     width: 50%;
-    padding-right: 10%;
+    padding-right: 0;
     padding-top: 90px;
     padding-bottom: 90px;
+    padding-left: 14%;
+}
+
+.page-footer-left-div {
+    max-width: 585px;
+    float: right;
+    padding-right: 20%;
+}
+
+.page-footer-right-div {
+    max-width: 585px;
+    float: left;
+    padding-left: 10%;
+    display: flex;
 }
 
 .page-footer-right {
     width: 50%;
-    padding-right: 3%;
-    padding-left: 7%;
+    padding-left: 0;
     display: flex;
     font-size: 14px;
     padding-top: 90px;
@@ -1104,10 +1117,6 @@ footer.page-footer {
     background: #343D4F;
     color: #fff;
     padding: 0 0;
-}
-
-.page-footer-block {
-    padding-top: 36px;
 }
 
 .page-footer .section-title {
@@ -1146,9 +1155,11 @@ form.footer-form {
 span.page-footer-left-span {
     display: block;
     padding-left: 40px;
-    color: #ccc;
+    color: #fff;
     font-size: 12px;
     line-height: 16px;
+    font-family: 'FuturaMediumC';
+    opacity: 0.5;
 }
 
 span.page-footer-left-span a:hover {
@@ -1156,7 +1167,7 @@ span.page-footer-left-span a:hover {
 }
 
 .page-footer-left-span a {
-    color: #ccc;
+    color: #fff;
     text-decoration: underline;
 }
 
