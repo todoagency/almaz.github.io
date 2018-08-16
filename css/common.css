@@ -10,6 +10,17 @@
 }
 
 @font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/FuturaMediumC.eot');
+    src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaMediumC.woff2') format('woff2'),
+        url('../fonts/FuturaMediumC.woff') format('woff'),
+        url('../fonts/FuturaMediumC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'FuturaDemiC';
     src: url('../fonts/FuturaDemiC.eot');
     src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
@@ -71,6 +82,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: 'icomoon3';
+  src:  url('../fonts/icomoon3.eot?zcal1y');
+  src:  url('../fonts/icomoon3.eot?zcal1y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon3.ttf?zcal1y') format('truetype'),
+    url('../fonts/icomoon3.woff?zcal1y') format('woff'),
+    url('../fonts/icomoon3.svg?zcal1y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon3-"], [class*=" icon3-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon3' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon3-1:before {
+  content: "\e90a";
+}
+.icon3-2:before {
+  content: "\e90b";
+}
+.icon3-3:before {
+  content: "\e90c";
+}
+.icon3-4:before {
+  content: "\e90d";
+}
+.icon3-5:before {
+  content: "\e90e";
+}
+.icon3-6:before {
+  content: "\e90f";
+}
+.icon3-7:before {
+  content: "\e910";
+}
+.icon3-8:before {
+  content: "\e911";
+}
+.icon3-9:before {
+  content: "\e912";
+}
+.icon3-10:before {
+  content: "\e913";
+}
+
 
 .icon-search2:before {
   content: "\e900";
@@ -201,7 +270,7 @@ input.input-transparent {
     border: none;
 }
 
-a.btn.btn-primary:hover, input.btn.btn-primary:hover {
+.btn.btn-primary:hover {
     background: #EA3A40!important;
     color: #fff!important;
     opacity: 1!important;
@@ -214,7 +283,12 @@ a.btn.btn-primary:hover, input.btn.btn-primary:hover {
 }
 
 a.btn.btn-primary.red-button:hover, input.btn.btn-primary.red-button:hover {
-    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
+    background: #f7f7f7!important;
+    color: #ea3a40!important;
+}
+
+a.btn.btn-primary.red-button:hover .icon-catalog:before, input.btn.btn-primary.red-button:hover .icon-catalog:before {
+    color: #ea3a40!important;
 }
 
 a, input, .btn {
@@ -232,6 +306,10 @@ a, input, .btn {
 
 img {
     max-width: 100%;
+}
+
+.slick-next, .slick-prev {
+    transition: 300ms;
 }
 
 /*Page-header*/
@@ -275,9 +353,25 @@ nav.page-header__nav a {
     padding-right: 50px;
 }
 
+li.page-header-call__li-sub-item > a > span {
+    margin-right: 8px;
+    vertical-align: top;
+    margin-bottom: 1px;
+}
+
+.btn.btn-primary.red-button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .page-header__search input {
     font-size: 18px;
     color: #fff;
+}
+
+li.page-header-call__li-sub-item {
+    list-style-type: none;
 }
 
 header.page-header > div {
@@ -308,6 +402,10 @@ header.page-header > div {
     color: #ccc;
 }
 
+.page-header__sravn .page-header-link:hover i {
+    color: #fff!important;
+}
+
 .page-header-1, .page-header-2 {
     margin: 25px -15px;
 }
@@ -329,7 +427,7 @@ header.page-header > div {
 }
 
 .full-site-index .page-header-phone a {
-    color: #fff;
+    color: #ccc;
 }
 
 nav.page-header__nav {
@@ -381,6 +479,7 @@ nav.page-header__nav a:hover {
     text-align: center;
     top: -10px;
     left: 20px;
+    line-height: 17px;
 }
 
 .page-header-link:hover i {
@@ -389,7 +488,7 @@ nav.page-header__nav a:hover {
 
 .section-title {
     font-size: 60px;
-    font-family: 'FuturaDemiC';
+    font-family: 'FuturaMediumC';
     color: #282D3A;
     line-height: 60px;
     margin-bottom: 80px;
@@ -503,7 +602,7 @@ nav.page-header-nav-mobilen {
 .header-mobile-menu-content  .page-header-phone > a > span {
     position: absolute;
     left: 6px;
-    top: -5px;
+    top: 7px;
 }
 
 /*Promo*/
@@ -524,6 +623,10 @@ section.home-promo:before {
     right: 0;
     bottom: 0;
     background: rgba(40, 45, 58, 0.71);
+}
+
+span.home-promo-service-span > span {
+    font-size: 68px;
 }
 
 section.home-promo > * {
@@ -558,6 +661,12 @@ span.home-promo-service-span img {
     flex-direction: column;
     align-items: normal;
     padding: 0 40px 0 0;
+    display: flex;
+    color: #fff;
+}
+
+.home-promo-service:hover {
+   color: #ea3a40;
 }
 
 section.home-promo > div > hr {
@@ -566,6 +675,22 @@ section.home-promo > div > hr {
 
 .home-promo-service {
     line-height: 16px;
+}
+
+.home-promo-service:hover {
+    text-decoration: none!important;
+}
+
+.home-promo-service:focus, .home-promo-service:focus:hover {
+    text-decoration: none!important;
+}
+
+.home-promo-service:focus {
+    color: #fff;    
+}
+
+.home-promo-service:focus:hover {
+    color: #ea3a40; 
 }
 
 .home-promo-service-span {
@@ -584,6 +709,7 @@ section.home-about {
     color: #fff;
     border-radius: 4px;
     background-size: cover;
+    overflow: hidden;
 }
 
 .home-about-gotocatalog:before {
@@ -686,30 +812,41 @@ section.home-about .section-title {
     margin: 0 15px;
     position: relative;
     display: block;
+    transition: 0.3s;
 }
 
 .home-services-item:hover, .home-services-item:focus {
     color: #282d3a;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .home-services-item.item--a:hover {
     background: url(../i/home/service1.jpg);
     background-size: cover;
+    transition: 0.3s;
 }
 
 .home-services-item.item--b:hover {
     background: url(../i/home/service2.jpg);
     background-size: cover;
+    transition: 0.3s;
 }
 
 .home-services-item.item--c:hover {
     background: url(../i/home/service3.jpg);
     background-size: cover;
+    transition: 0.3s;
 }
 
 .home-services-item:hover {
     background-size: cover;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.home-services-item:not(hover) {
+    transition: 300ms;
 }
 
 .home-services-item:hover:before {
@@ -720,6 +857,7 @@ section.home-about .section-title {
     bottom: 0;
     content: '';
     background: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
 }
 
 .home-services-item > * {
@@ -728,6 +866,7 @@ section.home-about .section-title {
 
 .home-services-item:hover > * {
     color: #fff;
+    transition: 0.3s;
 }
 
 .home-services-item .home-services-item-title {
@@ -897,6 +1036,8 @@ section.home-articles {
     justify-content: flex-end;
     position: relative;
     padding-bottom: 22px;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
 }
 
 .home-articles-item:first-child .home-articles-item-p {
@@ -1597,6 +1738,7 @@ section.inner-content.full--articles .page-title {
 .page-header-call > a.btn > span {
     margin-right: 8px;
     vertical-align: middle;
+    margin-bottom: 1px;
 }
 
 .page-header-call > a.btn {
@@ -1608,6 +1750,7 @@ section.inner-content.full--articles .page-title {
 .page-header-phone > a {
     padding-left: 35px;
     white-space: nowrap;
+    line-height: 38px;
 }
 
 .page-header-phone > a > span {
@@ -1766,7 +1909,7 @@ nav.page-header__nav > li {
     position: relative;
 }
 
-ul.page-header__nav-submenu {
+.page-header__nav-submenu {
     position: absolute;
     background: #fff!important;
     color: #333;
@@ -1774,19 +1917,22 @@ ul.page-header__nav-submenu {
     display: flex;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+    transition: 0.3s;
     height: 0;
     z-index: 100;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
 }
 
-.page-header__nav li:hover ul {
+.page-header-catalog-sub.is--hover {
     visibility:visible;
     opacity:1;
     transition-delay:0s;
     height: auto;
 }
 
-ul.page-header__nav-submenu a {
+.page-header__nav-submenu a {
     color: #282d3a!important;
 }
 
@@ -1823,7 +1969,7 @@ ul.page-header__nav-submenu a {
     margin: 0!important;
 }
 
-ul.page-header__nav-submenu a:hover {
+.page-header__nav-submenu a:hover {
     color: #ea3a40!important;
 }
 
@@ -1993,6 +2139,8 @@ span.home-promo-service-title br {
     }
     .article--list .full-articles-item:first-child {
         width: calc(100% - 30px)!important;
+        border-radius: 4px;
+        overflow: hidden;
     }
     .article--other .full-articles-item {
         background: none!important;

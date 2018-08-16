@@ -18,6 +18,34 @@ $(function(){
         return false;
     })
     
+    /*Initialize WOW Script*/
+    
+    new WOW().init();
+    
+    /*Catalog Shop*/
+    
+    $('#go-to-catalog').on( "click", function() {
+        var cl = $('.page-header-catalog-sub').attr("style");
+        console.log(cl);
+        if (cl == 'visibility: hidden; opacity: 0; height: 0px;' ) {
+        $('.page-header-catalog-sub').css('visibility', 'visible').css('opacity', '1').css('height', 'auto');
+        } else if (cl == 'visibility: visible; opacity: 1; height: auto;' ) {
+        $('.page-header-catalog-sub').css('visibility', 'hidden').css('opacity', '0').css('height', '0');    
+        }
+        return false;
+    });
+    
+    $(document).mouseup(function (e){ 
+        setTimeout(function() { 
+		var div = $(".page-header-catalog-sub"); 
+        var div2 = $("#go-to-catalog");
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0 && !div2.is(e.target)) { 
+			div.css('visibility', 'hidden').css('opacity', '0').css('height', '0'); 
+		}
+        }, 200);            
+	});
+    
     /*Sliders*/
     $('.home-products-slider').slick({
           infinite: true,
