@@ -780,12 +780,28 @@ section.home-about {
     left: 0;
 }
 
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
 /*Home Services*/
 
 section.home-services {
     margin: 0;
     padding: 350px 0 88px 0;
-    background: #3f2e11 url(../i/home/services.jpg);
+    background: url(../i/home/services.jpg) no-repeat;
     color: #fff;
 }
 
@@ -812,41 +828,58 @@ section.home-about .section-title {
     margin: 0 15px;
     position: relative;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item:hover, .home-services-item:focus {
     color: #282d3a;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item.item--a:hover {
     background: url(../i/home/service1.jpg);
     background-size: cover;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item.item--b:hover {
     background: url(../i/home/service2.jpg);
     background-size: cover;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item.item--c:hover {
     background: url(../i/home/service3.jpg);
     background-size: cover;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item:hover {
     background-size: cover;
-    transition: 0.3s;
+    transition: 0.5s;
     overflow: hidden;
 }
 
 .home-services-item:not(hover) {
-    transition: 300ms;
+    transition: 500ms;
+}
+
+.home-services-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #fff;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.home-services-item:before:not(hover) {
+    transition: 500ms;
+    background: #fff;
 }
 
 .home-services-item:hover:before {
@@ -856,17 +889,19 @@ section.home-about .section-title {
     right: 0;
     bottom: 0;
     content: '';
-    background: rgba(0, 0, 0, 0.7);
-    transition: 0.3s;
+    transition: 0.4s;
+    opacity: 0.7;
+    background: #000;
 }
 
 .home-services-item > * {
     opacity: 0.99;
+    transition: 0.5s;
 }
 
 .home-services-item:hover > * {
     color: #fff;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .home-services-item .home-services-item-title {
@@ -1081,7 +1116,7 @@ footer.page-footer > div {
     padding-right: 0;
     padding-top: 90px;
     padding-bottom: 90px;
-    padding-left: 14%;
+    padding-left: 4%;
 }
 
 .page-footer-left-div {
@@ -1497,9 +1532,9 @@ table.product-attr-table tr:nth-child(odd) {
 }
 
 .compare-options-full__title {
-    font-size: 32px;
+    font-size: 32px!important;
     font-family: 'FuturaDemiC';
-    line-height: 46px;
+    line-height: 46px!important;
     margin: 10px 0 30px;
     color: #282d3a;
 }
@@ -1561,7 +1596,7 @@ span.compare-options-table-znach {
     right: 0;
     bottom: 0;
     content: '';
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(52, 61, 79, 0.7);
 }
 
 .services-page-block > * {
@@ -1569,9 +1604,9 @@ span.compare-options-table-znach {
 }
 
 .home-about-title {
-    font-size: 26px;
+    font-size: 26px!important;
     font-family: 'FuturaDemiC';
-    margin-bottom: 35px;
+    margin-bottom: 35px!important;
 }
 
 .full-articles-item-title {
@@ -1925,7 +1960,6 @@ nav.page-header__nav > li {
     background: #fff!important;
     color: #333;
     padding: 30px;
-    display: flex;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -1934,6 +1968,7 @@ nav.page-header__nav > li {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 4px 4px;
     overflow: hidden;
+    display: none;
 }
 
 .page-header-catalog-sub.is--hover {
@@ -1941,6 +1976,10 @@ nav.page-header__nav > li {
     opacity:1;
     transition-delay:0s;
     height: auto;
+}
+
+.page-header-catalog-sub.showm {
+    display: flex;
 }
 
 .page-header__nav-submenu a {
@@ -2130,6 +2169,22 @@ a.page-header-navsmall__menu {
         padding-right: 0;
         padding-left: 0;
     }
+    .page-footer-right-div {
+        flex-wrap: wrap;
+    }
+    .page-footer-block:first-child {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .page-footer-left-flex {
+        flex-wrap: wrap;
+    }
+    span.page-footer-left-span {
+        padding: 30px 0;
+    }
+    .page-footer-left {
+        padding-left: 4%;
+    }
 }
 
 span.home-promo-service-title br {
@@ -2161,6 +2216,18 @@ span.home-promo-service-title br {
 @media (max-width: 991px) {
     .page-header__search > input {
         line-height: 40px;
+    }
+    .page-footer-right-div {
+        max-width: 585px;
+        float: left;
+        padding-left: 40px;
+        display: flex;
+    }
+    
+    .page-footer-left-div {
+        max-width: 585px;
+        float: none;
+        padding-right: 0;
     }
     .page-header__search {
         position: relative;
@@ -2466,7 +2533,16 @@ span.home-promo-service-title br {
         width: 100%;
     }
     .page-footer-right {
-        margin-top: 140px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    span.home-promo-service-span > span {
+        font-size: 34px;
+        display: block;
+        margin-bottom: 8px;
+    }
+    .header-mobile-menu {
+        width: auto;
     }
     .page-footer-block-title {
         margin-bottom: 11px;
@@ -2478,14 +2554,14 @@ span.home-promo-service-title br {
         margin-bottom: -15px;
     }
     .page-footer-left {
-        padding-right: 0;
-        padding-top: 10px;
+        padding-right: 15px;
+        padding-top: 15px;
     }
     .page-footer-right {
         margin-top: -30px;
         padding: 26px;
         margin: 0 -15px -50px;
-        width: calc(100% + 30px);
+        width: calc(100% + 15px);
     }
     section.home-promo {
         padding: 144px 0 50px 0;
@@ -2617,6 +2693,25 @@ span.home-promo-service-title br {
     
     .full-articles-item, .full-articles-item:hover {
         color: #fff!important;
+    }
+    .page-footer-right-div {
+        flex-wrap: wrap;
+    }
+    .services-page-block {
+        margin: 0 0px 30px;
+        padding: 60px 20px 30px;
+    }
+    .services-page-block.item--a {
+        background: url(../i/services/services1.jpg) 70% center;
+        background-size: cover;
+    }
+    .services-page-block.item--b {
+        background: url(../i/services/services2.jpg) 70% center;
+        background-size: cover;
+    }
+    .services-page-block.item--c {
+        background: url(../i/services/services3.jpg) 70% center;
+        background-size: cover;
     }
 }
 

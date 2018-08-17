@@ -25,6 +25,7 @@ $(function(){
     /*Catalog Shop*/
     
     $('#go-to-catalog').on( "click", function() {
+        $('.page-header-catalog-sub').addClass('showm');
         var cl = $('.page-header-catalog-sub').attr("style");
         console.log(cl);
         if (cl == 'visibility: hidden; opacity: 0; height: 0px;' ) {
