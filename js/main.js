@@ -18,17 +18,28 @@ $(function(){
         return false;
     })
     
+    $('#goto-tech-attr').click(function(){
+        $('.attrib-page-mobile').fadeIn();
+        $('body').css('overflow', 'hidden');
+        return false;
+    })
+    
+    $('#close-attr').click(function(){
+        $('.attrib-page-mobile').fadeOut();
+        $('body').css('overflow', 'auto');
+        return false
+    })
+    
     /*Lightbox*/
     
     $('.popupbutton').fancybox({
-        'padding': 37, 
+        'padding': 0, 
         'overlayOpacity': 0.87,
         'overlayColor': '#fff',
         'transitionIn': 'none',
         'transitionOut': 'none',
         'titlePosition': 'inside',
-        'centerOnScroll': true,
-        'minHeight': 480
+        'centerOnScroll': true
     });
     
     $('.lightbox').fancybox({
@@ -38,8 +49,7 @@ $(function(){
         'transitionIn': 'none',
         'transitionOut': 'none',
         'titlePosition': 'inside',
-        'centerOnScroll': true,
-        'minHeight': 480
+        'centerOnScroll': true
     });
     
     /*Initialize WOW Script*/
