@@ -71,6 +71,10 @@ $(function(){
         }, 200);            
 	});
     
+    /*Form Styler*/
+    
+    $('input, select').styler();
+    
     /*Sliders*/
     $('.home-products-slider').slick({
           infinite: true,

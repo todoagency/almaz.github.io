@@ -234,6 +234,8 @@
   color: #282d3a;
 }
 
+
+
 @media (min-width: 1200px) {
 .container {
     width: 1200px;
@@ -1389,10 +1391,13 @@ section.page-breadcrumbs > div {
     font-weight: 400;
     padding-right: 18px;
     min-width: 64px;
+    width: auto;
+    vertical-align: top;
+    display: inline-flex;
 }
 
 .page-sidebar-filter-items label input {
-    margin-right: 3px!important;
+    margin-right: 6px!important;
 }
 
 .page-sidebar-filter-items label.filter-full {
