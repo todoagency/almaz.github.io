@@ -3018,6 +3018,43 @@ a.product-page-slider-item-zoom.lightbox {
         margin-bottom: 0px;
         margin-top: 28px;
     }
+    .filter-page-sidebar {
+        position: fixed;
+        background: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        z-index: 110;
+        height: 100%;
+        overflow: auto;
+    }
+    .filter-page-sidebar .page-header__logo img {
+        margin: 0;
+    }
+    span.page-header-call-filter-title {
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .page-sidebar-item {
+        margin-bottom: -1px;
+        padding: 0 15px;
+    }
+    
+    .filter-page-sidebar header.page-header .container:after {
+        height: 0px;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .filter-page-sidebar > header {
+        display: none;
+    }
 }
 
 

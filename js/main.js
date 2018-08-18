@@ -75,6 +75,14 @@ $(function(){
     
     $('#filter-page-sidebar-go').on( "click", function() {
         $('.filter-page-sidebar').fadeIn();
+        $('body').css('overflow', 'hidden');
+        return false;
+    });
+    
+    $('#close-filter').on( "click", function() {
+        $('.filter-page-sidebar').fadeOut();
+        $('body').css('overflow', 'auto');
+        return false;
     });
     
     /*Form Styler*/
