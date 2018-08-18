@@ -986,7 +986,7 @@ section.home-products {
 
 .products-item {
     padding: 30px 15px 0;
-    margin-bottom: 45px;
+    margin-bottom: -12px;
     display: block;
     color: #282D3A;
     position: relative;
@@ -1004,7 +1004,15 @@ section.home-products {
 .products-item-title {
     font-size: 20px;
     font-family: 'FuturaDemiC';
-    line-height: 24px;
+    line-height: 24px!important;
+    margin-left: 14px;
+    margin-bottom: 2px!important;
+}
+
+.products-item-p {
+    margin-left: 14px;
+    font-size: 16px!important;
+    line-height: 20px!important;
 }
 
 .products-item-img {
@@ -1014,7 +1022,8 @@ section.home-products {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    overflow: hidden;
 }
 
 .products-item-go-sravn {
@@ -1027,9 +1036,6 @@ section.home-products {
     font-size: 0;
 }
 
-section.inner-content.full--catalog .products-item-go-sravn {
-    top: 26px;
-}
     
 .products-item-go-sravn:hover {
     background: #EA3A40;
@@ -1167,7 +1173,7 @@ footer.page-footer > div {
     padding-left: 0;
     display: flex;
     font-size: 14px;
-    padding-top: 90px;
+    padding-top: 125px;
     background: #282D3A;
     padding-bottom: 90px;
     position: relative;
@@ -1241,7 +1247,7 @@ span.page-footer-left-span a:hover {
 }
 
 .page-footer-block:first-child {
-    min-width: 280px;
+    min-width: 308px;
 }
 
 .page-footer-block.first {
@@ -1256,7 +1262,7 @@ span.page-footer-left-span a:hover {
 
 nav.page-footer-menu a {
     display: block;
-    line-height: 20px;
+    line-height: 19px;
     color: #fff;
     padding: 6px 0;
     font-size: 14px;
@@ -1275,6 +1281,7 @@ nav.page-footer-menu {
 
 .page-footer-contacts span {
     padding: 6px 0;
+    line-height: 13px;
 }
 
 .page-footer-dev p, .page-footer-copy p {
@@ -1282,7 +1289,7 @@ nav.page-footer-menu {
     line-height: 22px;
     color: #fff;
     font-size: 14px;
-    margin: 30px 0 0;
+    margin: 36px 0 0;
 }
 
 .page-footer-dev a {
@@ -1328,29 +1335,36 @@ section.page-breadcrumbs > div {
 .page-sidebar-item-link {
     font-size: 16px;
     font-family: 'FuturaDemiC';
-    line-height: 33px;
-    margin: 0px 0 10px;
+    line-height: 40px;
+    margin: 0px 0 7px;
     color: #282d3a;
-    display: inline-block;
+    display: block;
 }
 
 .page-sidebar-item {
-    margin-bottom: 15px;
+    margin-bottom: -1px;
 }
 
+
 .page-sidebar-item-sub {
-    padding-left: 35px;
+    padding-left: 19px;
+    margin: 4px 0 10px;
+}
+
+.page-sidebar-item--selected .page-sidebar-item-sub {
+    padding-left: 19px;
+    margin: 22px 0 9px;
 }
 
 .page-sidebar-item-link2 {
     display: block;
-    line-height: 30px;
+    line-height: 28px;
     color: #282d3a;
 }
 
 .page-sidebar-item a {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .page-sidebar-item a.selected {
@@ -1367,7 +1381,13 @@ section.page-breadcrumbs > div {
 }
 
 .full-page-content-nav {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 33px;
+}
+
+.full-page-content-text p {
+    margin-bottom: 28px;
+    line-height: 26px;
 }
 
 .full-page-content-text {
@@ -1380,6 +1400,7 @@ section.page-breadcrumbs > div {
 .full-page-content-text p {
     margin-bottom: 28px;
 }
+
 
 .page-sidebar-filter {
     padding: 40px 30px;
@@ -1394,6 +1415,7 @@ section.page-breadcrumbs > div {
     width: auto;
     vertical-align: top;
     display: inline-flex;
+    margin: 6px 0;
 }
 
 .page-sidebar-filter-items label input {
@@ -1412,6 +1434,11 @@ section.page-breadcrumbs > div {
     padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 30px;
+}
+
+
+.full-page-content {
+    margin-top: -20px;
 }
 
 .page-sidebar-filter-items:last-child {
@@ -1577,7 +1604,22 @@ table.product-attr-table tr:nth-child(odd) {
     visibility: hidden;
 }
 
+.product-form-zapros .jq-selectbox__select {
+    height: 34px;
+    padding: 0 45px 0 10px;
+    border: none;
+    border-bottom-color: #B3B3B3;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font: 20px/34px FuturaDemiC, sans-serif;
+    color: #282d3a;
+    text-shadow: none;
+}
 
+.product-form-zapros  .jq-selectbox__trigger {
+    border-left: none;
+}
 
 .slick-current .compare-options-full__title {
     opacity: 1;
@@ -1777,9 +1819,9 @@ span.compare-options-table-znach {
 }
 
 .inner-content .page-title {
-    font-size: 60px;
+    font-size: 72px;
     line-height: 68px;
-    margin: 32px 0 74px;
+    margin: 12px 0 58px;
 }
 
 section.inner-content.full--articles .page-title {
@@ -2255,6 +2297,12 @@ a.page-header-navsmall__menu {
     .page-footer-left {
         padding-left: 4%;
     }
+    .filter-page-sidebar {
+        margin-bottom: 70px;
+    }
+    section.inner-content.full--catalog .products-item-go-sravn {
+        top: 30px;
+    }
 }
 
 span.home-promo-service-title br {
@@ -2264,6 +2312,12 @@ span.home-promo-service-title br {
 .full--articles-first {
     line-height: 22px!important;
     margin-bottom: 48px!important;
+}
+
+a#filter-page-sidebar-go {
+    background: #f6f6f6;
+    display: block;
+    margin: -20px 0 30px;
 }
 
 .home-products-slider.catalog1-slider .slick-next {
@@ -2362,6 +2416,60 @@ a.product-page-slider-item-zoom.lightbox {
     position: relative;
 }
 
+.full-page-content-nav-left {
+    width: 36px;
+    height: 36px;
+    background: #ddd;
+    font-family: 'icomoon' !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+
+.full-page-content-nav-right {
+    width: 36px;
+    height: 36px;
+    background: #ddd;
+    font-family: 'icomoon' !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.full-page-content-nav-left:before, .full-page-content-nav-right:before {
+    font-family: 'icomoon' !important;
+    transition: 300ms;
+}
+
+.full-page-content-nav-left:hover, .full-page-content-nav-right:hover {
+    text-decoration: none;
+}
+
+.full-page-content-nav-left:hover:before, .full-page-content-nav-right:hover:before {
+    background: #ea3a40;
+    text-decoration: none;
+}
+
+.full-page-content-nav-left:before {
+    content: "\e909";
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
+.full-page-content-nav-right:before {
+    content: "\e90a";
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
 @media (min-width: 992px) {
     .home-articles-item:not(:first-child) {
         background: #F4F4F4!important;
@@ -2386,8 +2494,24 @@ a.product-page-slider-item-zoom.lightbox {
     .page-footer-right-div {
         max-width: 585px;
         float: left;
-        padding-left: 40px;
+        padding-left: 10px;
         display: flex;
+    }
+    .page-footer-block:first-child {
+        min-width: 100%;
+        margin-bottom: 53px;
+    }
+    
+    nav.page-footer-menu {
+        min-height: 151px;
+    }
+    
+    .page-footer-right {
+        padding-top: 90px!important;
+        background: #282D3A!important;
+        padding-bottom: 90px!important;
+        margin: -27px -15px -50px!important;
+        padding: 50px 20px!important;
     }
     
     .page-footer-left-div {
@@ -2646,9 +2770,6 @@ a.product-page-slider-item-zoom.lightbox {
     .products-item-title {
         margin-top: 30px;
     }
-    .products-item-p {
-        margin: -6px 0 -42px;
-    }
     section.home-articles {
         margin: 3px 0 100px;
     }
@@ -2737,8 +2858,6 @@ a.product-page-slider-item-zoom.lightbox {
         background: #343d4f;
         padding-bottom: 40px;
         position: relative;
-        margin: -50px 0 0!important;
-        padding: 0!important;
     }
     .page-footer-block {
         padding-top: 0;
@@ -2879,6 +2998,26 @@ a.product-page-slider-item-zoom.lightbox {
         background: url(../i/services/services3.jpg) 70% center;
         background-size: cover;
     }
+    
+    section.page-breadcrumbs > div {
+        display: flex;
+        margin: -15px auto -22px;
+        font-size: 12px;
+    }
+    .products-item-img {
+        height: 290px;
+        margin-bottom: 20px;
+    }
+    section.inner-content.full--catalog .products-item-p {
+        margin-left: 15px;
+        font-size: 15px!important;
+        line-height: 20px!important;
+        margin-bottom: 20px!important;
+    }
+    .full-page-content-nav {
+        margin-bottom: 0px;
+        margin-top: 28px;
+    }
 }
 
 
@@ -2896,5 +3035,16 @@ a.product-page-slider-item-zoom.lightbox {
         padding-bottom: 90px;
         margin: -27px -15px -50px!important;
         padding: 50px 20px!important;
+    }
+    section.inner-content.full--catalog .page-title {
+        max-width: 250px;
+        line-height: 27px;
+    }
+    .full-page-content-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    section.inner-content {
+        margin-bottom: 30px;
     }
 }

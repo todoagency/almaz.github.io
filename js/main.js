@@ -71,6 +71,12 @@ $(function(){
         }, 200);            
 	});
     
+    /**/
+    
+    $('#filter-page-sidebar-go').on( "click", function() {
+        $('.filter-page-sidebar').fadeIn();
+    });
+    
     /*Form Styler*/
     
     $('input, select').styler();
