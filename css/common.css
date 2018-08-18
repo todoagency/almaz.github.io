@@ -1436,8 +1436,8 @@ section.page-breadcrumbs > div {
 }
 
 .product-page-attr-titlesub {
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 24px!important;
+    line-height: 42px!important;
 }
 
 .product-page-attr-addsrav {
@@ -2301,6 +2301,60 @@ span.home-promo-service-title br {
 .compare-options-table-item {
     margin-top: 120px;
     margin: 0 -30px 0 0;
+}
+
+.product-go-price .btn {
+    width: 200px;
+}
+
+.product-page-attr-addsrav > span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.product-page-attr-addsrav {
+    position: relative;
+    padding-left: 40px;
+}
+
+.product-page-attr-addsrav > span:before {
+    font-size: 30px;
+}
+
+.home-products.related--products > .section-title {
+    margin-bottom: 46px;
+}
+
+.product-page-slider {
+    position: relative;
+}
+
+.product-page-slider:before {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    background: url(../i/svg/zoom-in.svg) no-repeat;
+    z-index: 100;
+}
+
+a.product-page-slider-item-zoom.lightbox {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.product-page-slider-item img {
+    margin: 0;
+}
+
+.product-page-slider-item {
+    position: relative;
 }
 
 @media (min-width: 992px) {
