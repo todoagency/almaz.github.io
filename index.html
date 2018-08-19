@@ -440,8 +440,14 @@
                         <h2 class="section-title">Есть вопросы?</h2>
                         <p class="page-footer-left-p">Lorem Ipsum - это текст-"рыба", часто <br>используемый в печати и вэб-дизайне. </p>
                         <form action="" class="footer-form">
-                            <input type="text" name="name" placeholder="Ваше имя">
-                            <input type="text" name="phone" class="phone-field" placeholder="Номер телефона">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required>
+                                <label class="form-label">Ваше имя</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="phone-field form-control" required>
+                                <label class="form-label">Номер телефона</label>
+                            </div>
                             <div class="page-footer-left-flex">
                                 <input type="submit" class="btn btn-primary red-button" value="Получить ответы">
                                 <span class="page-footer-left-span">нажимая на кнопку, я подтверждаю свое согласие <a href="">с политикой конфиденциальности</a></span>

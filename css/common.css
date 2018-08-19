@@ -1216,9 +1216,10 @@ form.footer-form {
     font-size: 24px;
     background: transparent;
     border: none;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #555;
     width: 100%;
     margin-bottom: 21px;
+    color: #fff;
 }
 
 .page-footer-left-flex {
@@ -2565,6 +2566,49 @@ section.home-articles.product-articles-blocks {
     margin: -60px 0 60px;
 }
 
+.footer-form form {
+  padding: 15px;
+}
+.footer-form .form-group {  
+  position: relative;
+}
+.footer-form .form-control {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+}
+.footer-form .form-label{
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 0;
+  line-height: 40px;
+  transition: .3s;
+}
+.footer-form .form-control:focus~.form-label,
+.footer-form .form-control:not(:focus):valid~.form-label {
+  top: -24px;
+  font-size: 10px;
+}
+
+.footer-form .form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    border-bottom: 2px solid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.full-articles-items-section .page-title {
+    font-size: 60px!important;
+    margin-top: 30px!important;
+}
+
+section.inner-content.full--articles .page-title {
+    margin-bottom: 45px;
+    font-size: 60px!important;
+}
+
 @media (min-width: 992px) {
     .home-articles-item:not(:first-child) {
         background: #F4F4F4!important;
@@ -3297,6 +3341,14 @@ section.home-articles.product-articles-blocks {
     .home-products.related--products > .section-title {
         margin-bottom: 36px;
     }
+    .full-articles-items-section .page-title {
+        font-size: 28px!important;
+        margin-top: 30px!important;
+    }
+    section.inner-content.full--articles .page-title {
+        margin-bottom: 45px;
+        font-size: 28px!important;
+    }
 }
 
 
@@ -3377,5 +3429,8 @@ section.home-articles.product-articles-blocks {
     .home-products.related--products .products-item-go-sravn {
         top: 0;
         left: 0;
+    }
+    .home-about-gotocatalog {
+        width: 100%;
     }
 }
