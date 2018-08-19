@@ -259,14 +259,19 @@ $(function(){
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          asNavFor: '.product-page-slider-nav'
+          asNavFor: '.product-page-slider-nav',
+          autoplay: true,
+          autoplaySpeed: 5000,
+          speed: 1200
     });
     $('.product-page-slider-nav').slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 1,
           asNavFor: '.product-page-slider',
-          autoplay: true
+          autoplay: true,
+          autoplaySpeed: 5000,
+          speed: 1200
     });
     $('.compare-options-table').slick({
           infinite: true,
