@@ -81,7 +81,7 @@ $(function(){
         }, 200);            
 	});
     
-    /**/
+    /*Open / Close Filter*/
     
     $('#filter-page-sidebar-go').on( "click", function() {
         $('.filter-page-sidebar').fadeIn();
@@ -98,6 +98,55 @@ $(function(){
     /*Form Styler*/
     
     $('input, select').styler();
+    
+    /* Life Search */
+    $('.search-highlight input').bind("change keyup input click", function() {
+        if(this.value.length >= 3){            
+            /*$.ajax({
+                type: 'post',
+                url: "search.php", //Path
+                data: {'referal':this.value},
+                response: 'text',
+                success: function(data){
+                    $(".search_result").html(data).fadeIn(); 
+               }
+             */
+           $(".search_result").fadeIn(); 
+           if ($(window).width() <= '991'){
+                $('.page-header__search-link').addClass('mob');
+           }
+           setTimeout(function(){ 
+           classs = $('.page-header__search-link').attr('class');
+           console.log(classs);
+           if (classs == 'page-header__search-link mob') {
+               $('.page-header__search-link mob').on( "click", function() {
+                    $('.page-header__search-link.mob').removeClass('mob');
+                    $(".search_result").fadeOut;
+                    return false;
+                });
+           }
+           }, 5010);
+        }
+    })
+
+    
+    
+    $(".search_result").hover(function(){
+        $("#search-highlight input").blur(); 
+    })
+
+    $(".search_result").on("click", "li", function(){
+        s_user = $(this).text();
+        $(".search_result").fadeOut();
+    })
+    
+    $(document).mouseup(function (e) {
+        var container = $(".search_result");
+        if (container.has(e.target).length === 0){
+            container.fadeOut();
+        }
+    });
+    
     
     /*Sliders*/
     $('.home-products-slider').slick({

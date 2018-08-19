@@ -2518,6 +2518,7 @@ a.product-page-slider-item-zoom.lightbox {
 
 .category--list .page-sidebar {
     padding: 38px 36px;
+    background: #f6f6f6;
 }
 
 .page-sidebar-filter-item-title {
@@ -2609,6 +2610,58 @@ section.inner-content.full--articles .page-title {
     font-size: 60px!important;
 }
 
+.product-page-slider .slick-next, .product-page-slider .slick-prev {
+    transition: 300ms;
+    display: none!important;
+}
+
+.product-attr-table .jq-selectbox__select {
+    margin-left: -10px;
+}
+
+.search_result {
+    display: none;
+    position: absolute;
+    height: 170px;
+    width: calc(100% - 30px);
+    background: #fff;
+    z-index: 100;
+    top: 40px;
+    border-radius: 4px;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+
+.search_result a.search_item {
+    display: flex;
+    padding: 5px 0;
+    color: #000;
+    align-items: center;
+}
+
+.search_result .search_item .search-item_img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.search_result .search_item .search-item_p {
+    font-family: 'FuturaDemiC';
+    color: #000;
+}
+
+a.search_item:hover, a.search_item:hover .search-item_p {
+    color: #ea3a40;
+}
+
+.search_cat_item {
+    display: none;
+    font-size: 14px;
+    background: #f4f4f4;
+    padding: 4px 12px;
+    margin: 8px 8px 8px 0;
+    color: #282d3a;
+}
+
 @media (min-width: 992px) {
     .home-articles-item:not(:first-child) {
         background: #F4F4F4!important;
@@ -2632,6 +2685,36 @@ section.inner-content.full--articles .page-title {
 @media (max-width: 991px) {
     .page-header__search > input {
         line-height: 40px;
+    }
+    .search_cat_item {
+        display: inline-block;
+    }
+    .search_result .search_item .search-item_img {
+        display: none;
+    }
+    .search_result .search_item .search-item_p {
+        font-family: 'FuturaBookC';
+        font-size: 14px;
+        margin: 2px 0;
+        color: #282d3a;
+    }
+    .page-header__search-link.mob:after {
+        content: "";
+    }
+    .page-header__search-link.mob {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 2px;
+        right: 18px;
+        background: #fff url(../i/closesearch.svg) 9px no-repeat;
+        border-radius: 4px;
+    }
+    .search_result {
+        height: 300px;
+    }
+    .category--list .page-sidebar {
+        background: transparent;
     }
     .full-site-index .home-services-item {
         color: #fff!important;
