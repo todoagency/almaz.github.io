@@ -459,8 +459,9 @@ nav.page-header__nav a {
     font-size: 16px;
     color: #282D3A;
     text-transform: uppercase;
-    margin-right: 50px;
+    margin-right: 57px;
     padding-right: 0;
+    padding-top: 15px!important;
     line-height: 55px;
     display: inline-block;
     margin-top: -20px;
@@ -513,7 +514,7 @@ nav.page-header__nav a:hover {
 }
 
 .section-title {
-    font-size: 60px;
+    font-size: 64px;
     font-family: 'FuturaMediumC';
     color: #282D3A;
     line-height: 60px;
@@ -637,7 +638,7 @@ section.home-promo {
     background: #282D3A url(../i/home/promo.jpg);
     background-size: cover;
     color: #fff;
-    padding: 164px 0 58px 0;
+    padding: 164px 0 64px 0;
     position: relative;
 }
 
@@ -723,19 +724,23 @@ section.home-promo > div > hr {
     margin: 10px 0 25px;
 }
 
+.home-promo .btn {
+    width: 200px;
+}
+
 /*Home About*/
 
 section.home-about {
-    margin: 90px 0 50px;
+    margin: 92px 0 70px;
 }
-
 .home-about-gotocatalog {
     background: #282D3A url(../i/home/about.jpg);
-    padding: 40px 30px;
+    padding: 34px 30px;
     color: #fff;
     border-radius: 4px;
     background-size: cover;
     overflow: hidden;
+    max-width: 370px;
 }
 
 .home-about-gotocatalog:before {
@@ -752,6 +757,8 @@ section.home-about {
     opacity: 0.999;
 }
 
+
+
 .home-about-gotocatalog p {
     font-size: 18px;
     line-height: 26px;
@@ -761,23 +768,28 @@ section.home-about {
 .home-about-gotocatalog p.home-about-title {
     font-size: 36px!important;
     font-family: 'FuturaDemiC';
-    line-height: 46px;
-    margin-bottom: 15px;
+    line-height: 43px;
+    margin-bottom: 25px!important;
 }
 
 .home-about-gotocatalog-btn {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 3px;
 }
 
 .home-about-bblocks {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .home-about-block {
     width: calc(50% - 40px);
-    margin: 32px 20px 12px;
+    margin: 32px 40px 12px 0;
+}
+
+.home-about-block:nth-child(even) {
+    margin: 32px 0 12px 40px;
 }
 
 .home-about-block p {
@@ -826,7 +838,7 @@ section.home-about {
 
 section.home-services {
     margin: 0;
-    padding: 350px 0 88px 0;
+    padding: 335px 0 88px 0;
     background: url(../i/home/services.jpg) no-repeat;
     color: #fff;
 }
@@ -837,7 +849,7 @@ section.home-services .section-title {
 }
 
 section.home-about .section-title {
-    margin-bottom: 92px;
+    margin-bottom: 90px;
 }
 
 .home-services-item p {
@@ -855,6 +867,7 @@ section.home-about .section-title {
     position: relative;
     display: block;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .home-services-item:hover, .home-services-item:focus {
@@ -952,7 +965,7 @@ section.home-about .section-title {
 /*Home Brands*/
 
 section.home-brands {
-    margin: 146px 0 206px;
+    margin: 126px 0 206px;
 }
 
 section.home-brands .section-title {
@@ -972,12 +985,13 @@ section.home-brands .section-title {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    border-radius: 5px;
 }
 
 /*Home Products*/
 
 section.home-products {
-    margin: 146px 0 162px;
+    margin: 146px 0 151px;
 }
 
 .home-products-slider > .products-item {
@@ -986,6 +1000,12 @@ section.home-products {
 .home-products-slider {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 8px;
+    margin: 0 -15px;
+}
+
+section.home-articles .section-title {
+    margin-bottom: 100px!important;
 }
 
 .products-item {
@@ -1011,6 +1031,7 @@ section.home-products {
     line-height: 24px!important;
     margin-left: 14px;
     margin-bottom: 2px!important;
+    margin-top: 36px!important;
 }
 
 .products-item-p {
@@ -1056,7 +1077,7 @@ section.home-articles {
 }
 
 .home-articles-item {
-    padding: 40px 60px;
+    padding: 50px 74px 20px;
     position: relative;
     height: 228px;
     float: left;
@@ -1102,7 +1123,7 @@ section.home-articles {
 
 .home-articles-item:first-child {
     color: #fff;
-    width: 60%;
+    width: 57%;
     float: left;
     height: 456px;
     background: #282D3A;
@@ -1113,6 +1134,7 @@ section.home-articles {
     padding-bottom: 22px;
     border-radius: 4px 0 0 4px;
     overflow: hidden;
+    padding: 40px 52px 35px;
 }
 
 .home-articles-item:first-child .home-articles-item-p {
@@ -1157,6 +1179,11 @@ footer.page-footer > div {
     padding-top: 90px;
     padding-bottom: 90px;
     padding-left: 4%;
+}
+
+.page-footer-left-flex .red-button {
+    min-width: 200px!important;
+    margin-top: -2px;
 }
 
 .page-footer-left-div {
@@ -1216,10 +1243,22 @@ form.footer-form {
     font-size: 24px;
     background: transparent;
     border: none;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #eee;
     width: 100%;
     margin-bottom: 21px;
     color: #fff;
+}
+
+.home-articles-item:nth-child(2) {
+    border-radius: 0 4px 0 0;
+}
+
+.home-articles-item:nth-child(2) {
+    border-radius: 0 0 4px 0;
+}
+
+.form-control {
+    box-shadow: none;
 }
 
 .page-footer-left-flex {
@@ -1230,7 +1269,7 @@ form.footer-form {
 
 span.page-footer-left-span {
     display: block;
-    padding-left: 40px;
+    padding-left: 20px;
     color: #fff;
     font-size: 12px;
     line-height: 16px;
@@ -2053,12 +2092,12 @@ section.inner-content.full--articles .page-title {
 }
 
 .home-products .slick-next {
-    right: 14px;
+    right: 2px;
     width: 36px;
     height: 36px;
     background: #ddd;
     position: absolute;
-    top: -70px;
+    top: -72px;
     font-family: 'icomoon' !important;
 }
 
@@ -2071,13 +2110,13 @@ section.inner-content.full--articles .page-title {
 }
 
 .home-products .slick-prev {
-    right: 65px;
+    right: 51px;
     left: auto;
     width: 36px;
     height: 36px;
     background: #ddd;
     position: absolute;
-    top: -70px;
+    top: -72px;
     font-family: 'icomoon' !important;
 }
 
@@ -2574,17 +2613,26 @@ section.home-articles.product-articles-blocks {
   position: relative;
 }
 .footer-form .form-control {
-  width: 100%;
-  height: 40px;
-  padding: 5px 15px;
+    width: 100%;
+    height: 50px;
+    padding: 15px!important;
+    border-radius: 0!important;
 }
-.footer-form .form-label{
-  position: absolute;
-  pointer-events: none;
-  left: 15px;
-  top: 0;
-  line-height: 40px;
-  transition: .3s;
+.form-group {
+    margin-bottom: 26px;
+}
+.footer-form .form-label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 0;
+    line-height: 40px;
+    font-size: 24px;
+    transition: .3s;
+    font-weight: 400!important;
+    line-height: 50px;
+    font-family: 'FuturaBookC';
+    display: block;
 }
 .footer-form .form-control:focus~.form-label,
 .footer-form .form-control:not(:focus):valid~.form-label {
