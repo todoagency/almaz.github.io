@@ -2031,7 +2031,15 @@ section.inner-content.full--articles .page-title {
 .page-header-call > a.btn > span {
     margin-right: 8px;
     vertical-align: middle;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
+}
+
+#close-filter span:before, #close-attr span:before {
+    display: none;
+}
+
+#close-filter, #close-attr {
+    background: url(../i/svg/close_black.svg) top center no-repeat;
 }
 
 .page-header-call > a.btn {
