@@ -100,9 +100,9 @@ $(function(){
     $('input, select').styler();
     
     /* Life Search */
-    $('.search-highlight input').bind("change keyup input click", function() {
+    /*$('.search-highlight input').bind("change keyup input click", function() {
         if(this.value.length >= 3){            
-            /*$.ajax({
+            $.ajax({
                 type: 'post',
                 url: "search.php", //Path
                 data: {'referal':this.value},
@@ -110,7 +110,7 @@ $(function(){
                 success: function(data){
                     $(".search_result").html(data).fadeIn(); 
                }
-             */
+             
            $(".search_result").fadeIn(); 
            if ($(window).width() <= '991'){
                 $('.page-header__search-link').addClass('mob');
@@ -127,9 +127,15 @@ $(function(){
            }
            }, 5010);
         }
-    })
-
+    })*/
     
+    /*Search*/
+
+    $('.search-highlight > input').bind("change keyup input click", function() {
+        $(this).addClass('click');
+        $('.page-header__search-link').addClass('click');
+        $(".search_result").fadeIn();  
+    });
     
     $(".search_result").hover(function(){
         $("#search-highlight input").blur(); 
@@ -145,6 +151,8 @@ $(function(){
         if (container.has(e.target).length === 0){
             container.fadeOut();
         }
+        $('.search-highlight > input').removeClass('click');
+        $('.page-header__search-link').removeClass('click');
     });
     
     

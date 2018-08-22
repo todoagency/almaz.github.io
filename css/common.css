@@ -2870,6 +2870,47 @@ section.inner-content.articles--list .page-title {
     transition: 300ms;
 }
 
+section.home-services {
+    background-size: cover;
+}
+
+form.search-highlight input.click {
+    background: #fff;
+    color: #282828!important;
+}
+
+form.search-highlight input.click::placeholder {
+    color: #666!important;
+}
+
+.full-site-index .page-header__search-link.click:after {
+    color: #1c3658;
+}
+
+span.icons-menu:before {
+    display: none;
+}
+
+.page-header-navsmall__menu {
+    margin-top: 5px;
+    background: url(../i/svg/burger_black.svg) top center no-repeat;
+    height: 25px;
+    display: inline-block;
+    width: 30px;
+}
+
+.full-site.full-site-index .page-header-navsmall__menu {
+    background: url(../i/svg/burger_white.svg) top center no-repeat;
+}
+
+#close-menu {
+    background: url(../i/svg/close_black.svg) top center no-repeat!important;
+}
+
+#close-menu > span {
+    display: none!important;
+}
+
 @media (min-width: 992px) {
     .home-articles-item:not(:first-child) {
         background: #F4F4F4!important;
