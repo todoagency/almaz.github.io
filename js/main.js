@@ -266,7 +266,6 @@ $(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            infinite: true,  
           }
         },
         {
@@ -275,7 +274,6 @@ $(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            infinite: true,
           }
         }]
     });
@@ -308,19 +306,13 @@ $(function(){
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          asNavFor: '.product-page-slider-nav',
-          autoplay: true,
-          autoplaySpeed: 5000,
-          speed: 1200
+          asNavFor: '.product-page-slider-nav'
     });
     $('.product-page-slider-nav').slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 1,
-          asNavFor: '.product-page-slider',
-          autoplay: true,
-          autoplaySpeed: 5000,
-          speed: 1200
+          asNavFor: '.product-page-slider'
     });
     $('.compare-options-table').slick({
           infinite: true,
