@@ -3980,3 +3980,15 @@ span.icons-menu:before {
         margin-bottom: 50px;
     }
 }
+
+@media (min-width: 1600px) {
+    .page-footer-left-div {
+        padding-right: 110px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .page-footer-left-div {
+        padding-right: 40px;
+    }
+}
