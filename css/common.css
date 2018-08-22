@@ -1105,7 +1105,7 @@ section.home-articles {
 }
 
 .category--list.full--catalog .full-page-content {
-    margin-top: -20px;
+    margin-top: -24px;
 }
 
 .category--list.full--catalog {
@@ -1289,11 +1289,13 @@ form.footer-form {
 }
 
 .home-articles-item:nth-child(2) {
-    border-radius: 0 4px 0 0;
+    border-radius: 0 8px 0 0!important;
+    overflow: hidden;
 }
 
-.home-articles-item:nth-child(2) {
-    border-radius: 0 0 4px 0;
+.home-articles-item:nth-child(3) {
+    border-radius: 0 0 8px 0!important;
+    overflow: hidden;
 }
 
 .form-control {
@@ -1306,14 +1308,22 @@ form.footer-form {
     align-items: center;
 }
 
+.page-header-navsmall__menu {
+    cursor: pointer;
+}
+
 span.page-footer-left-span {
     display: block;
     padding-left: 20px;
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 16px;
     font-family: 'FuturaMediumC';
     opacity: 0.5;
+}
+
+span.page-footer-contacts-span {
+    white-space: nowrap;
 }
 
 span.page-footer-left-span a:hover {
@@ -1521,7 +1531,7 @@ section.page-breadcrumbs > div {
 }
 
 .full-page-content {
-    margin-top: -22px;
+    margin-top: -25px;
     padding-right: 18px;
 }
 
@@ -2150,13 +2160,17 @@ section.inner-content.full--articles .page-title {
 }
 
 .home-products .slick-next {
-    right: 2px;
+    right: 15px;
     width: 36px;
     height: 36px;
     background: #ddd;
     position: absolute;
     top: -72px;
     font-family: 'icomoon' !important;
+}
+
+.home-articles .btn.btn-primary.btn-right {
+    margin-right: 30px;
 }
 
 .home-products .slick-next:before {
@@ -2168,7 +2182,7 @@ section.inner-content.full--articles .page-title {
 }
 
 .home-products .slick-prev {
-    right: 51px;
+    right: 64px;
     left: auto;
     width: 36px;
     height: 36px;
@@ -2626,6 +2640,10 @@ a.product-page-slider-item-zoom.lightbox {
     font-family: 'icomoon' !important;
     transition: 300ms;
     
+}
+
+.full-page-content-nav-right:hover:before, .full-page-content-nav-left:hover:before {
+    color: #fff;
 }
 
 .full-page-content-nav-left:hover, .full-page-content-nav-right:hover {
