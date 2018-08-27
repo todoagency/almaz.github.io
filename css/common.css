@@ -2903,7 +2903,7 @@ section.home-services {
 }
 
 form.search-highlight input.click {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
     color: #282828!important;
 }
 
@@ -2965,6 +2965,14 @@ span.page-breadcrumbs-span {
 
 section.inner-content.full--articles .page-title {
     margin: 30px 0 48px;
+}
+
+.page-header__nav-submenu-title span::before {
+    color: #ea3a40;
+}
+
+section.home-promo > div > hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 @media (min-width: 992px) {
