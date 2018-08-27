@@ -4047,9 +4047,7 @@ section.home-promo > div > hr {
     .product-page-title {
         margin-bottom: 23px;
     }
-}
-
-@media (max-width: 477px) { 
+    
     .page-header-call {
         width: 63%;
     }
@@ -4158,6 +4156,21 @@ section.home-promo > div > hr {
     .page-header__search {
         width: 100%;
     }
+    .home-promo-service-span {
+        margin: 5px 0 -20px;
+    }
+    .home-promo-service {
+        height: 126px;
+    }
+    .home-about-gotocatalog-btn {
+        margin: 44px 31px 38px!important;
+    }
+    section.home-products {
+        margin: -43px 0 15px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 477px) and (max-width: 991px) { 
@@ -4175,6 +4188,10 @@ section.home-promo > div > hr {
     .products-item {
         width: 50%;
         float: left;
+    }
+    section.home-services {
+        background: url(../i/home/services2.jpg) no-repeat;
+        background-size: cover;
     }
 }
 
