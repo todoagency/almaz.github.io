@@ -30,6 +30,19 @@ $(function(){
         return false
     })
     
+    /*Promo Item Hover*/
+    
+    $('.home-promo-service').on( "mouseenter", function() {
+        console.log('dsd');
+        $(this).children().children('.normal').css('opacity','0');
+        $(this).children().children('.hover').css('opacity','1');
+    })
+    
+    $('.home-promo-service').on( "mouseleave", function() {
+        $(this).children().children('.normal').css('opacity','1');
+        $(this).children().children('.hover').css('opacity','0');
+    })
+    
     /*Lightbox*/
     
     $('.popupbutton').fancybox({

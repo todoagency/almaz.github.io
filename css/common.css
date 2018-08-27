@@ -270,10 +270,10 @@ input.input-transparent {
     font-size: 16px;
     text-transform: uppercase;
     line-height: 28px;
-    padding: 6px 20px;
+    padding: 7px 20px 6px;
     background: #fff;
     color: #000;
-    opacity: 0.8;
+    opacity: 0.5;
     border: none;
     font-family: 'FuturaMediumC';
 }
@@ -421,7 +421,7 @@ header.page-header > div {
 }
 
 .full-site-index .page-header__sravn .page-header-link {
-    color: #ccc;
+    color: #fff;
 }
 
 .page-header__sravn .page-header-link:hover i {
@@ -449,7 +449,7 @@ header.page-header > div {
 }
 
 .full-site-index .page-header-phone a {
-    color: #ccc;
+    color: #fff;
 }
 
 nav.page-header__nav {
@@ -515,8 +515,8 @@ nav.page-header__nav a:hover {
 }
 
 .section-title {
-    font-size: 64px;
-    font-family: 'FuturaMediumC';
+    font-size: 60px;
+    font-family: 'FuturaDemiC';
     color: #282D3A;
     line-height: 60px;
     margin-bottom: 80px;
@@ -657,10 +657,23 @@ span.home-promo-service-span > span {
     font-size: 68px;
 }
 
+.home-promo-service img {
+    transition: 300ms;
+}
+
 section.home-promo > * {
     opacity: 0.999;
 }
 
+span.home-promo-service-span img {
+    height: 70px;
+}
+
+.home-promo-service-span img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
 
 .home-promo-title {
     font-size: 72px;
@@ -723,6 +736,8 @@ section.home-promo > div > hr {
 
 .home-promo-service-span {
     margin: 10px 0 25px;
+    position: relative;
+    height: 70px;
 }
 
 .home-promo .btn {
@@ -1556,32 +1571,29 @@ section.page-breadcrumbs > div {
 }
 
 .product-page-title {
-    font-size: 36px;
+    font-size: 26px;
     font-family: 'FuturaDemiC';
-    line-height: 42px;
-    margin-bottom: 20px;
-    margin-top: 0;
+    line-height: 31px;
+    margin-bottom: 33px;
+    margin-top: -2px;
 }
 
 .product-page-attr-subtitle {
-    margin-bottom: 30px;
-    font-size: 17px;
-    line-height: 24px;
+    margin-bottom: 30px!important;
+    font-size: 17px!important;
+    line-height: 19px!important;
+    margin: 0px 0 -2px!important;
 }
 
 .product-page-attr-div {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0 -12px;
+    margin: 14px 0 -17px;
 }
 
 .product-page-attr-titlesub {
     font-size: 24px!important;
     line-height: 42px!important;
-}
-
-table.product-attr-table td {
-    padding: 10px 15px;
 }
 
 .product-page-attr-addsrav {
@@ -1595,7 +1607,12 @@ table.product-attr-table {
 }
 
 table.product-attr-table td {
-    padding: 15px;
+    padding: 13px 19px;
+    width: 50%;
+}
+
+table.product-attr-table td > div {
+    margin: -4px 0 -5px;
 }
 
 table.product-attr-table tr td:first-child {
@@ -1608,11 +1625,12 @@ table.product-attr-table tr:nth-child(odd) {
 }
 
 .product-go-price {
-    margin: 70px 0 0;
+    margin: 39px 0 0;
 }
 
 .product-page-img {
     padding-right: 78px;
+    margin-top: -8px;
 }
 
 .product-page-img img {
@@ -1645,12 +1663,12 @@ table.product-attr-table tr:nth-child(odd) {
 .product-page-attr-subtitle {
     margin-bottom: 30px!important;
     font-size: 17px!important;
-    line-height: 24px!important;
-    margin: -16px 0 -2px!important;
+    line-height: 20px!important;
+    margin: 0 0 20px!important;
 }
 
 .product-page-information {
-    padding: 26px 0 18px 0;
+    padding: 36px 0 18px 0;
 }
 
 .product-page-information p {
@@ -1659,8 +1677,29 @@ table.product-attr-table tr:nth-child(odd) {
     margin-bottom: 25px;
 }
 
+.product-page-attribute > h2.product-page-titleblock {
+    margin-bottom: 4px!important;
+}
+
+.product-page-attribute table.product-attr-table td {
+    padding: 14px 19px 14px!important;
+    width: 50%;
+}
+
+.jq-selectbox__trigger {
+    background: url(../i/svg/arrow.svg) center no-repeat;
+    opacity: 0.8;
+}
+
+.jq-selectbox__select:hover .jq-selectbox__trigger {
+    opacity: 1;
+}
+
+.jq-selectbox__trigger-arrow {
+    opacity: 0;
+}
+
 table.product-attr-table td {
-    padding: 10px 15px;
     width: 50%;
 }
 
@@ -2895,7 +2934,6 @@ section.inner-content.articles--list .page-title {
 }
 
 *:not(:hover) {
-    transition: 300ms;
 }
 
 section.home-services {
@@ -2974,6 +3012,20 @@ section.inner-content.full--articles .page-title {
 section.home-promo > div > hr {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+.products-item:hover .products-item-img {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+}
+
+.full-content nav.page-header__nav a {
+    font-family: 'FuturaDemiC';
+}
+
+.full-site.full-site-index nav.page-header__nav a {
+    font-family: 'FuturaBookC';
+}
+
 
 @media (min-width: 992px) {
     .home-articles-item:not(:first-child) {
