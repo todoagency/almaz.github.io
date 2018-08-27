@@ -2303,7 +2303,7 @@ nav.page-header__nav > li {
 .page-header__nav-p a {
     font-size: 16px!important;
     text-transform: none!important;
-    line-height: 20px!important;
+    line-height: 26px!important;
     margin: 0!important;
     display: inline-block!important;
 }
@@ -2338,7 +2338,7 @@ nav.page-header__nav > li {
 }
 
 .page-header__nav-submenu-title > span {
-    font-size: 40px;
+    font-size: 36px;
     position: absolute;
     top: 6px;
     left: -55px;
@@ -2346,8 +2346,16 @@ nav.page-header__nav > li {
     text-align: right;
 }
 
+.nav-submenu-flex-1 {
+    height: 320px;
+}
+
+.nav-submenu-flex-2 {
+    height: 170px;
+}
+
 .page-header__nav-submenu-flex--1 p span {
-    left: -90px;
+    left: -55px;
 }
 
 .page-header__nav-submenu-flex--2 p span {
