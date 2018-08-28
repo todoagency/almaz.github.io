@@ -4356,6 +4356,9 @@ section.home-promo .btn-primary{
     height: 3px;
 
     }
+    .ctbt{
+        margin-top: 1px;
+    }
 }
 @media (min-width: 1930px) {
 section.home-promo > div > hr {
