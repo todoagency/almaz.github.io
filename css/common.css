@@ -4330,7 +4330,7 @@ section.home-promo .btn-primary{
 
 @media (min-width: 1300px) {
     .btn.btn-primary.red-button {
-    line-height: 27px;
+    line-height: 28px;
     }
 }
 
@@ -4363,7 +4363,7 @@ section.home-promo > div > hr {
 }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
 span.home-promo-service-span img {
     height: 55px;
     width: 100%;
