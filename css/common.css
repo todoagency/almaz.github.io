@@ -1376,9 +1376,11 @@ footer.page-footer {
 }
 
 .page-footer-left-p {
-    font-size: 18px;
+       font-size: 18px;
     line-height: 24px;
     margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 form.footer-form {
@@ -3111,9 +3113,11 @@ section.inner-content.full--articles .page-title {
 }
 
 section.home-promo > div > hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
 }
-
+section.home-promo .btn-primary{
+    background: rgba(255, 255, 255, 0.6);
+}
 .products-item:hover .products-item-img {
    -webkit-box-shadow: 0px 22px 37px -23px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 22px 37px -23px rgba(0,0,0,0.7);
@@ -3169,10 +3173,11 @@ section.home-promo > div > hr {
     .home-promo-service-span {
         margin: 10px 0 25px;
         position: relative;
-        height: 70px;
+        height: 85px;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     span.home-promo-service-span img {
         height: 70px;
@@ -4262,7 +4267,7 @@ section.home-promo > div > hr {
         margin: 5px 0 -20px;
     }
     .home-promo-service {
-        height: 126px;
+        height: 150px;
     }
     .home-about-gotocatalog-btn {
         margin: 44px 31px 38px!important;
@@ -4322,3 +4327,53 @@ section.home-promo > div > hr {
     height: 20px;
     width: 20px;
 }
+
+@media (min-width: 1300px) {
+    .btn.btn-primary.red-button {
+    line-height: 27px;
+    }
+}
+
+@media (min-width: 1365px) {
+    .btn.btn-primary.red-button {
+    line-height: 28px;
+    }
+    
+    .btn.btn-primary .icon-catalog{
+      font-size: 14px;  
+    }
+   
+}
+
+
+
+@media (min-width: 1400px) {
+
+ .page-header-2:after {
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    height: 3px;
+
+    }
+}
+@media (min-width: 1930px) {
+section.home-promo > div > hr {
+    border-top: 3px solid rgba(255, 255, 255, 0.4);
+}
+}
+
+@media (max-width: 380px) {
+span.home-promo-service-span img {
+    height: 55px;
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
