@@ -4340,7 +4340,8 @@ section.home-promo .btn-primary{
     }
     
     .btn.btn-primary .icon-catalog{
-      font-size: 14px;  
+      font-size: 14px; 
+      padding-bottom: 2px; 
     }
    
 }
