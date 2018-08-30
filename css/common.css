@@ -1660,11 +1660,12 @@ section.page-breadcrumbs > div {
 }
 
 .product-page-title {
-    font-size: 26px;
+    font-size: 36px;
     font-family: 'FuturaDemiC';
-    line-height: 31px;
+    line-height: 42px;
     margin-bottom: 33px;
     margin-top: -2px;
+    color: #282D3A;
 }
 
 .product-page-attr-subtitle {
@@ -1682,7 +1683,7 @@ section.page-breadcrumbs > div {
 
 .product-page-attr-titlesub {
     font-size: 24px!important;
-    line-height: 42px!important;
+    line-height: 34px!important;
 }
 
 .product-page-attr-addsrav {
@@ -1692,7 +1693,7 @@ section.page-breadcrumbs > div {
 
 table.product-attr-table {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 table.product-attr-table td {
@@ -1706,7 +1707,7 @@ table.product-attr-table td > div {
 
 table.product-attr-table tr td:first-child {
     white-space: nowrap;
-    padding-right: 60px;
+    padding-right: 0px;
 }
 
 table.product-attr-table tr:nth-child(odd) {
@@ -1751,7 +1752,7 @@ table.product-attr-table tr:nth-child(odd) {
 
 .product-page-attr-subtitle {
     margin-bottom: 30px!important;
-    font-size: 17px!important;
+    font-size: 16px!important;
     line-height: 20px!important;
     margin: 0 0 20px!important;
 }
@@ -1876,7 +1877,7 @@ table.product-attr-table td {
     background: none;
     box-shadow: none;
     font: 20px/34px FuturaDemiC, sans-serif;
-    color: #282d3a;
+    color: #343D4F;
     text-shadow: none;
 }
 
@@ -2712,8 +2713,10 @@ span.home-promo-service-title br {
 }
 
 .product-page-attr-addsrav {
-    position: relative;
+       position: relative;
     padding-left: 40px;
+    font-size: 16px;
+    color: #000;
 }
 
 .product-page-attr-addsrav > span:before {
@@ -3802,6 +3805,7 @@ section.home-promo .btn-primary{
     .page-sidebar-item {
         margin-bottom: -1px;
         padding: 0 15px;
+        cursor: pointer;
     }
     
     .filter-page-sidebar header.page-header .container:after {
@@ -4340,8 +4344,7 @@ section.home-promo .btn-primary{
     }
     
     .btn.btn-primary .icon-catalog{
-      font-size: 14px; 
-      padding-bottom: 2px; 
+      font-size: 14px;  
     }
    
 }
