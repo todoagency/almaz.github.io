@@ -4338,7 +4338,7 @@ section.home-promo .btn-primary{
     }
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 1370px) {
     .btn.btn-primary.red-button {
     line-height: 28px;
     }
@@ -4347,6 +4347,10 @@ section.home-promo .btn-primary{
       font-size: 14px;  
     }
    
+    .btn.btn-primary .icon-catalog {
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
 }
 
 
@@ -4377,10 +4381,15 @@ span.home-promo-service-span img {
 }
 }
 
+.page-sidebar-item a[aria-expanded="true"] {
+    background: #f6f6f6!important;
+}
 
 
 
-
+.page-sidebar-item a:hover{
+    cursor: pointer;
+}
 
 
 
