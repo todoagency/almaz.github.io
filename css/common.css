@@ -1081,6 +1081,7 @@ section.home-brands .section-title {
 .home-brands-list {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 25px;
 }
 
 .home-brands-item {
@@ -4375,6 +4376,14 @@ section.home-promo .btn-primary{
 section.home-promo > div > hr {
     border-top: 3px solid rgba(255, 255, 255, 0.4);
 }
+    .page-footer-logo img {
+    width: 110px;
+    margin: -8px 0 18px;
+        margin-top: -8px;
+        margin-bottom: 18px;
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
 }
 
 @media (max-width: 450px) {
@@ -4421,4 +4430,18 @@ span.home-promo-service-span img {
 
 .page-footer-dev p{
     margin-top: 25px!important;
+}
+
+@media (min-width: 1900px) {
+     .page-footer-logo img {
+    width: 110px;
+    margin: -8px 0 18px;
+        margin-top: -8px;
+        margin-bottom: 18px;
+    margin-bottom: 10px;
+    margin-top: 25px!important;
+}
+    .page-footer-dev p{
+    margin-top: 0px!important;
+}
 }
