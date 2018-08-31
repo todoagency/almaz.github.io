@@ -1076,12 +1076,14 @@ section.home-brands {
 
 section.home-brands .section-title {
     margin-bottom: 30px;
+    margin-left: -5px;
 }
 
 .home-brands-list {
     display: flex;
     flex-wrap: wrap;
     padding-right: 25px;
+    margin-left: -10px;
 }
 
 .home-brands-item {
