@@ -1473,7 +1473,7 @@ nav.page-footer-menu a {
 }
 
 nav.page-footer-menu {
-    min-height: 156px;
+    min-height: 120px;
 }
 
 .page-footer-contacts a, .page-footer-contacts span {
@@ -2276,7 +2276,7 @@ section.inner-content.full--articles .page-title {
 }
 
 .page-header__search-link:hover:after {
-    color: #ea3a40!important;
+    color: rgba(255, 255, 255, 0.62)!important;
     transition: 300ms!important;
 }
 
@@ -2290,7 +2290,7 @@ section.inner-content.full--articles .page-title {
 
 .page-header__search-link:after {
     content: "\e900";
-    font-size: 22px;
+    font-size: 17px;
     color: #f4f4f4;
     color: #282d3a;
 }
@@ -2301,6 +2301,8 @@ section.inner-content.full--articles .page-title {
 
 .full-site-index .page-header__search-link:after {
     color: #f4f4f4;
+    margin-left: -8px;
+    
 }
 
 .home-products .slick-next {
@@ -4062,6 +4064,7 @@ section.home-promo .btn-primary{
     .page-footer-logo img {
         width: 110px;
         margin: 6px 0 18px;
+        margin-bottom: 17px;
     }
     .page-footer-contacts span {
         padding: 4px 0;
@@ -4393,3 +4396,14 @@ span.home-promo-service-span img {
 
 
 
+   .page-footer-logo img {
+        width: 110px;
+        margin: -8px 0 18px;
+        margin-bottom: 12px;
+    }
+
+.page-footer-dev a:after {
+    content: ".";
+    color: #1AE23A;
+    font-size: 20px;
+}
