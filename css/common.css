@@ -4407,3 +4407,13 @@ span.home-promo-service-span img {
     color: #1AE23A;
     font-size: 20px;
 }
+
+.headervnut:after {
+    content: " ";
+    background-color: rgba(40, 45, 58, 0.3)!important;
+    color: #fff;
+    height: 2px;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
