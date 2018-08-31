@@ -4400,6 +4400,7 @@ span.home-promo-service-span img {
         width: 110px;
         margin: -8px 0 18px;
         margin-bottom: 12px;
+       margin-top: 0px;
     }
 
 .page-footer-dev a:after {
@@ -4416,4 +4417,8 @@ span.home-promo-service-span img {
     display: block;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.page-footer-dev p{
+    margin-top: 25px!important;
 }
